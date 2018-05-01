@@ -8,15 +8,11 @@ use Mix.Config
 # if you want to provide default values for your application for
 # 3rd-party users, it should be done in your "mix.exs" file.
 
-# You can configure your application as:
+  config :issues, github_url: "https://api.github.com"
+
+  Application.get_env(:issues, :github_url)
 #
-#     config :issues, key: :value
-#
-# and access this configuration in your application as:
-#
-#     Application.get_env(:issues, :key)
-#
-# You can also configure a 3rd-party app:
+# Or configure a 3rd-party app:
 #
 #     config :logger, level: :info
 #
